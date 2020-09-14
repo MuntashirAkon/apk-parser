@@ -1,5 +1,7 @@
 package net.dongliu.apk.parser.struct.xml;
 
+import android.util.SparseArray;
+
 import net.dongliu.apk.parser.struct.ResourceValue;
 import net.dongliu.apk.parser.struct.resource.ResourceTable;
 import net.dongliu.apk.parser.utils.ResourceLoader;
@@ -40,7 +42,7 @@ public class Attribute {
      */
     public static class AttrIds {
 
-        private static final Map<Integer, String> ids = ResourceLoader.loadSystemAttrIds();
+        private static final SparseArray<String> ids = ResourceLoader.loadSystemAttrIds();
 
         public static String getString(long id) {
             String value = ids.get((int) id);

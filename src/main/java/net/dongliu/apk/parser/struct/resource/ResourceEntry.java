@@ -2,8 +2,9 @@ package net.dongliu.apk.parser.struct.resource;
 
 import net.dongliu.apk.parser.struct.ResourceValue;
 
-import javax.annotation.Nullable;
 import java.util.Locale;
+
+import androidx.annotation.Nullable;
 
 /**
  * A Resource entry specifies the key (name) of the Resource.

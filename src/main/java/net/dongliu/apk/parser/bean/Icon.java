@@ -1,7 +1,8 @@
 package net.dongliu.apk.parser.bean;
 
-import javax.annotation.Nullable;
 import java.io.Serializable;
+
+import androidx.annotation.Nullable;
 
 /**
  * The plain file apk icon.

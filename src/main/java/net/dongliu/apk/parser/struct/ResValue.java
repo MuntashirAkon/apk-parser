@@ -1,6 +1,6 @@
 package net.dongliu.apk.parser.struct;
 
-import javax.annotation.Nullable;
+import androidx.annotation.Nullable;
 
 /**
  * Apk res value struct.

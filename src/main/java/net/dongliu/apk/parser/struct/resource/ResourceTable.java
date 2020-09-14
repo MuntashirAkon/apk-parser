@@ -1,11 +1,14 @@
 package net.dongliu.apk.parser.struct.resource;
 
+import android.util.SparseArray;
+
 import net.dongliu.apk.parser.struct.ResourceValue;
 import net.dongliu.apk.parser.struct.StringPool;
 import net.dongliu.apk.parser.utils.ResourceLoader;
 
-import javax.annotation.Nonnull;
 import java.util.*;
+
+import androidx.annotation.NonNull;
 
 /**
  * The apk resource table
@@ -16,7 +19,7 @@ public class ResourceTable {
     private Map<Short, ResourcePackage> packageMap = new HashMap<>();
     private StringPool stringPool;
 
-    public static Map<Integer, String> sysStyle = ResourceLoader.loadSystemStyles();
+    public static SparseArray<String> sysStyle = ResourceLoader.loadSystemStyles();
 
     public void addPackage(ResourcePackage resourcePackage) {
         this.packageMap.put(resourcePackage.getId(), resourcePackage);
@@ -38,7 +41,7 @@ public class ResourceTable {
     /**
      * Get resources match the given resource id.
      */
-    @Nonnull
+    @NonNull
     public List<Resource> getResourcesById(long resourceId) {
         // An Android Resource id is a 32-bit integer. It comprises
         // an 8-bit Package id [bits 24-31]

@@ -2,7 +2,7 @@ package net.dongliu.apk.parser.bean;
 
 import net.dongliu.apk.parser.struct.dex.DexClassStruct;
 
-import javax.annotation.Nullable;
+import androidx.annotation.Nullable;
 
 /**
  * @author dongliu

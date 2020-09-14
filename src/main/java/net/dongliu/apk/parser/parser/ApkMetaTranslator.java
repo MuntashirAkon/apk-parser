@@ -8,9 +8,10 @@ import net.dongliu.apk.parser.struct.resource.ResourceTable;
 import net.dongliu.apk.parser.struct.resource.Type;
 import net.dongliu.apk.parser.struct.xml.*;
 
-import javax.annotation.Nonnull;
-import javax.annotation.Nullable;
 import java.util.*;
+
+import androidx.annotation.NonNull;
+import androidx.annotation.Nullable;
 
 /**
  * trans binary xml to apk meta info
@@ -181,12 +182,12 @@ public class ApkMetaTranslator implements XmlStreamer {
 
     }
 
-    @Nonnull
+    @NonNull
     public ApkMeta getApkMeta() {
         return apkMetaBuilder.build();
     }
 
-    @Nonnull
+    @NonNull
     public List<IconPath> getIconPaths() {
         return iconPaths;
     }

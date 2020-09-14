@@ -1,7 +1,6 @@
 package net.dongliu.apk.parser.bean;
 
-
-import javax.annotation.Nullable;
+import androidx.annotation.Nullable;
 
 /**
  * permission provided by the app
